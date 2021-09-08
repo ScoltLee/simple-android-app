@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".AutoListView">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="AutoComplete"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+       />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="Nhập 1 địa điểm!" />
+
+    <AutoCompleteTextView
+        android:id="@+id/singleComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        />
+
+    <requestFocus/>
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:visibility="invisible"
+        />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconall"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FullScreen.Light">
+        <activity android:name="com.example.myapplication.AsyncTask2"></activity>
+        <activity android:name="com.example.myapplication.AsyncTask1" />
+        <activity android:name="com.example.myapplication.ParseXML" />
+        <activity android:name="com.example.myapplication.ParseJson" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.example.myapplication.DocBao" />
+        <activity android:name="com.example.myapplication.SaveHistory" />
+        <activity android:name="com.example.myapplication.QLSach_SQLite" />
+        <activity android:name="com.example.myapplication.QLSV_SQLite" />
+        <activity android:name="com.example.myapplication.SpinnerLayout" />
+        <activity android:name="com.example.myapplication.TabTong" />
+        <activity android:name="com.example.myapplication.SeePic" />
+        <activity android:name="com.example.myapplication.GridViewImage" />
+        <activity android:name="com.example.myapplication.GridViewText" />
+        <activity android:name="com.example.myapplication.SubListPhone" />
+        <activity android:name="com.example.myapplication.Phone" />
+        <activity android:name="com.example.myapplication.AutoListView" />
+        <activity android:name="com.example.myapplication.ListViewTest" />
+        <activity android:name="com.example.myapplication.Notes" />
+        <activity android:name="com.example.myapplication.SubKara" />
+        <activity android:name="com.example.myapplication.Karaoke" />
+
+        <service android:name="com.example.myapplication.MediaPlayerService" />
+
+        <activity android:name="com.example.myapplication.Music" />
+        <activity android:name="com.example.myapplication.Search" />
+        <activity android:name="com.example.myapplication.Camera" />
+        <activity android:name="com.example.myapplication.SMS" />
+        <activity android:name="com.example.myapplication.Call" />
+        <activity android:name="com.example.myapplication.CallSMS" />
+        <activity android:name="com.example.myapplication.IntentChild3" />
+        <activity android:name="com.example.myapplication.IntentChild2" />
+        <activity android:name="com.example.myapplication.Intent3" />
+        <activity android:name="com.example.myapplication.Intent2" />
+        <activity android:name="com.example.myapplication.AllIntent" />
+        <activity android:name="com.example.myapplication.IntentChild" />
+        <activity android:name="com.example.myapplication.Intent1" />
+        <activity android:name="com.example.myapplication.HoaDon" />
+        <activity android:name="com.example.myapplication.ChuyenDoiTien" />
+        <activity android:name="com.example.myapplication.TongHop" />
+        <activity android:name="com.example.myapplication.ChuyenDoiLich" />
+        <activity android:name="com.example.myapplication.PTBac2" />
+        <activity android:name="com.example.myapplication.Calculator" />
+        <activity android:name="com.example.myapplication.ConvertF" />
+        <activity
+            android:name="com.example.myapplication.Subactivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name="com.example.myapplication.Cycle" />
+        <activity android:name="com.example.myapplication.BMI" />
+        <activity android:name="com.example.myapplication.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
